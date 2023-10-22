@@ -13,7 +13,11 @@ namespace AplicacionLibreriaCRUD.Models
         [Required]
         public int Cantidad { get; set; }
         [Required]
-        public double Costo { get; set; }
+        public double Costo
+        {
+            get { return Costo; }
+            set { Costo = value < 0.01 ? 0 : value; }
+        }
         [Required]
         public string Autor {  get; set; }
         [Required]
