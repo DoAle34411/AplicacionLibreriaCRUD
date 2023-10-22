@@ -20,3 +20,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.custom-background-color {
+    background-color: #EB6864;
+    color: #ffffff;
+}
+
+.custom-btn-color {
+    background-color: #EB6864;
+    color: #ffffff;
+}
+
+.custom-btn-color-2 {
+    background-color: #cc5c82;
+    color: #ffffff;
+}
+
+.custom-btn-color-3 {
+    background-color: #9e5b91;
+    color: #ffffff;
+}

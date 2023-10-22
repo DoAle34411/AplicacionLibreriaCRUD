@@ -9,9 +9,17 @@
     <p>Inserte los datos relacionados al producto por cambiarse</a>.</p>
     <form method="post">
         <input type="hidden" asp-for="IdProducto">
-         <div class="mb-3">
-            <label >Nombre</label>
+        <div class="mb-3">
+            <label>Nombre</label>
             <input asp-for="Nombre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Autor</label>
+            <input asp-for="Autor" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Descripcion</label>
+            <textarea asp-for="Descripcion" class="form-control"></textarea>
         </div>
         <div class="mb-3">
             <label>Descripcion</label>
@@ -21,12 +29,16 @@
             <label>Cantidad</label>
             <input asp-for="Cantidad" class="form-control">
         </div>
+        <div class="mb-3">
+            <label>Costo</label>
+            <input asp-for="Costo" class="form-control">
+        </div>
         <div class="row">
             <div class="col-6" col-md-10>
-                <a asp-action="Index" class="btn btn-primary">Regresar</a>
+                <a asp-action="Index" class="btn custom-btn-color-3">Regresar</a>
             </div>
             <div class="col-6" col-md-10>
-                <button type="submit" asp-action="Edit" class="btn btn-primary">Guardar Cambios</button>
+                <button type="submit" asp-action="Edit" class="btn custom-btn-color">Guardar Cambios</button>
             </div>
         </div>
               
